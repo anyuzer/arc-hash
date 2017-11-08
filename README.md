@@ -53,7 +53,7 @@ Take an unknown value and return a sha256 hash representing it
 3. Circular object references are not handled
 4. String() is eventually applied to all values, so 5 and '5' will not be seen as different values
 5. This is not incredibly performant, and should not be used for dynamic comparison over potentially large data sets
-
+ 
  
 ## Testing
 ```
