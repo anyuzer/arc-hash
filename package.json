@@ -13,6 +13,14 @@
   },
   "author": "Ian Reid <ian@anyuzer.com>",
   "license": "ISC",
+  "keywords": [
+    "hash",
+    "hashing",
+    "object",
+    "array",
+    "md5",
+    "sha256"
+  ],
   "bugs": {
     "url": "https://github.com/anyuzer/arc-hash/issues"
   },
