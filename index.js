@@ -7,7 +7,7 @@ class ArcHash {
             case 'object': return ArcHash.object(_unknown, 'md5');
             case 'array': return ArcHash.array(_unknown, 'md5');
             default:
-                const hmac = crypto.createHmac('md5', '');
+                const hmac = crypto.createHash('md5');
                 hmac.update(_unknown);
                 return hmac.digest('hex');
         }
@@ -18,7 +18,7 @@ class ArcHash {
             case 'object': return ArcHash.object(_unknown, 'sha256');
             case 'array': return ArcHash.array(_unknown, 'sha256');
             default:
-                const hmac = crypto.createHmac('sha256', '');
+                const hmac = crypto.createHash('sha256');
                 hmac.update(_unknown);
                 return hmac.digest('hex');
         }

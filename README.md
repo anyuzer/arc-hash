@@ -1,6 +1,8 @@
 # arc-hash [![Build Status](https://travis-ci.org/anyuzer/arc-hash.svg?branch=master)](https://travis-ci.org/anyuzer/arc-hash)
 Convenience ES6 hashing library. Supports object, array and string hashing for md5 and sha256
 
+**NOTE: 2.0 can be considered a breaking change. The hashes being returned were non standard (ie. did not match externally generated md5s or shas). This is fixed, but the hashes returned will be different that v1, so will be incompatible with stored hashes.**
+
 ## Install
 ```
 $ npm install arc-hash --save
