@@ -1,6 +1,6 @@
 {
   "name": "arc-hash",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "ES6 convenience library for hashing arrays, objects, strings as md5 or sha256",
   "main": "index.js",
   "scripts": {
