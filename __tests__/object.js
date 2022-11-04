@@ -1,5 +1,5 @@
-const crypto = require('crypto');
-const ArcHash = require('../index');
+import crypto from 'crypto';
+import ArcHash from "../index.js";
 
 describe('ArcHash string tests',()=>{
     it('Should return a consistent md5 hash of an object based on the contents of the object',()=>{
