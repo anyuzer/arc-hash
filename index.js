@@ -45,6 +45,30 @@ class ArcHash {
         }, '');
         return (_algorithm === 'sha256' ? ArcHash.sha256(joinedStr, _secret) : ArcHash.md5(joinedStr, _secret));
     }
+
+    static base64Encode(_string) {
+        if (typeof window !== 'undefined' && window.btoa) {
+            // Browser environment
+            return window.btoa(_string);
+        }
+
+        if(typeof Buffer !== 'undefined') {
+            // Node.js environment
+            return Buffer.from(_string).toString('base64');
+        }
+    }
+
+    static base64Decode(_string) {
+        if (typeof window !== 'undefined' && window.atob) {
+            // Browser environment
+            return window.atob(_string);
+        }
+
+        if (typeof Buffer !== 'undefined') {
+            // Node.js environment
+            return Buffer.from(_string, 'base64').toString('utf-8');
+        }
+    }
 }
 
 export default ArcHash;
